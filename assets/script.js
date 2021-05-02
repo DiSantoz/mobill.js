@@ -53,17 +53,20 @@ var generatePassword = function () {
 
     //loop to generate password according to desire length and character selection
   }
+  var randomPassword = ""
+
   for (var i = 0; i < character; i++) {
-    var totalRandom="";
+  
 
-    totalRandom=total[Math.floor(Math.random()*total.length)];
+    randomCharacter=total[Math.floor(Math.random()*total.length)];
     
 
-    randomPassword += total[i];
+    randomPassword += randomCharacter[i];
     
-    console.log(randomPassword);
-  }
+    
+  }console.log(randomPassword);
 }
+
 
 
 
