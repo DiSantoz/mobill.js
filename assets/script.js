@@ -58,13 +58,14 @@ var generatePassword = function () {
   for (var i = 0; i < character; i++) {
   
 
-    randomCharacter=total[Math.floor(Math.random()*total.length)];
+    var randomCharacter=total[Math.floor(Math.random()*total.length)];
     
 
-    randomPassword += randomCharacter[i];
+    randomPassword += randomCharacter;
     
     
   }console.log(randomPassword);
+  return randomPassword
 }
 
 
