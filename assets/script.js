@@ -10,8 +10,10 @@ var generatePassword = function () {
     return generatePassword();
   }
   else {
-
+    //array to store all array types chosen by user
     var total = []
+
+    //does the user want lower case letters in the password?
     var lowerCase = window.confirm("Click 'OK' if you would like to include lowercase letters");
     if (lowerCase) {
       randomPassword.push(randomLetters);
@@ -19,6 +21,7 @@ var generatePassword = function () {
       total = total.concat(letters)
     }
 
+    //does the user want upper case letters in the password?
     var upperCase = window.confirm("Click 'OK' if you would like to include uppercase letters");
     if (upperCase) {
       randomPassword.push(randomUpper);
@@ -26,6 +29,7 @@ var generatePassword = function () {
       total = total.concat(upperLetters)
     }
 
+    //does the user want symbols in the password?
     var symbols = window.confirm("Click 'OK' if you would like to include special characters");
     if (symbols) {
       randomPassword.push(specialChar);
@@ -33,21 +37,29 @@ var generatePassword = function () {
       total = total.concat(specialChar)
     }
 
+    //does the user want numbers in the password?
     var numeric = window.confirm("Click 'OK' if you would like to include numbers");
     if (numeric) {
       randomPassword.push(randomNum);
       console.log(randomNum);
       total = total.concat(numbers)
     }
-  }
-    for (var i = 0; i < character; i++) {
 
-      if (lowerCase && symbols && numeric && upperCase) {
-        randomPassword.push(total);
-      }
-      console.log(total[i]);
+    //verifies that user picked at least one character type or prompts user to start at beginning
+    if (lowerCase == false && upperCase == false && symbols == false && numeric == false) {
+      window.alert("Must select at least one character type")
+      return generatePassword();
     }
+
+    //loop to generate password according to desire length and character selection
   }
+  for (var i = 0; i < character; i++) {
+
+    randomPassword = total[i];
+
+    console.log(randomPassword);
+  }
+}
 
 
 
