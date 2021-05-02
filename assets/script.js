@@ -1,44 +1,44 @@
 // Assignment code here
 var generatePassword = function () {
-  
+  var randomPassword = [];
   //ask user length of password
-  var characterLength = Number(window.prompt("How many characters would you like your password to contain?"));
+  var character = Number(window.prompt("How many characters would you like your password to contain?"));
 
   //verify that password length value entered is between 8 and 128 characters
-  if (characterLength < 8 || characterLength > 128 || characterLength === "" || characterLength === null || characterLength !== parseInt(characterLength)) {
+  if (character < 8 || character > 128 || character === "" || character === null || character !== parseInt(character)) {
     window.alert("Password length must be at least 8 characters and no more than 128 characters");
     return generatePassword();
   }
+  else {
 
-  var lowerCase = window.confirm("Click 'OK' if you would like to include lowercase letters");
-  if (lowerCase) {
-    
-    console.log(randomLetters);
-  }
+    var lowerCase = window.confirm("Click 'OK' if you would like to include lowercase letters");
+    if (lowerCase) {
+      randomPassword.push(randomLetters);
+      console.log(randomLetters);
+    }
 
-  var upperCase = window.confirm("Click 'OK' if you would like to include uppercase letters");
-  if (upperCase) {
-    
-    console.log(randomUpper);
-  }
+    var upperCase = window.confirm("Click 'OK' if you would like to include uppercase letters");
+    if (upperCase) {
+      randomPassword.push(randomUpper);
+      console.log(randomUpper);
+    }
 
-  var symbols = window.confirm("Click 'OK' if you would like to include special characters");
-  if (symbols) {
-    
-    console.log(specialChar);
-  }
+    var symbols = window.confirm("Click 'OK' if you would like to include special characters");
+    if (symbols) {
+      randomPassword.push(specialChar);
+      console.log(specialChar);
+    }
 
-  var numeric = window.confirm("Click 'OK' if you would like to include numbers");
-  if (numeric) {
-    
-    console.log(randomNum);
-  }
+    var numeric = window.confirm("Click 'OK' if you would like to include numbers");
+    if (numeric) {
+      randomPassword.push(randomNum);
+      console.log(randomNum);
+    }
 
-  for (var i=0; i < characterLength; i++){
-    randomLetters;
-    randomUpper;
-    specialChar;
-    randomNum;
+    for (var i = 0; i < character.length; i++) {
+      randomPassword[i];
+      console.log(randomPassword[i]);
+    }
   }
 }
 
