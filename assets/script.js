@@ -55,7 +55,7 @@ var generatePassword = function () {
   }
   for (var i = 0; i < character; i++) {
 
-    randomPassword = total[i];
+    randomPassword += total[i];
 
     console.log(randomPassword);
   }
