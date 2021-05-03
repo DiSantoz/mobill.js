@@ -2,7 +2,7 @@
 
 ## Description
 
-Using primarily JavaScript, I created a password generator that adapts to the user's needs. The password generator will display a password of the user's choice between 8 and 128 characters in length, and will include at least one character type: :abcd: lower case , :capital_abcd: upper case , :symbols: symbols  or :1234: numbers  based on the user's choice.
+Using primarily JavaScript, I created a password generator that adapts to the user's needs. The password generator will display a password of the user's choice between 8 and 128 characters in length, and will include at least one character type: :abcd: lower case, :capital_abcd: upper case , :symbols: symbols  or :1234: numbers  based on the user's choice.
 
 No more reusing the same old password, this password generator will randomly generate a combination of lower case and/or upper case letters, as well as numbers and symbols should you wish to include it as part of your password criteria.
 
@@ -10,7 +10,7 @@ Go on and check out my [password generator](https://disantoz.github.io/mobill.js
 
 ## Usage
 
-To beging the random password generator simply click on the red generate password button. You will first be prompted with selection the length of your password:
+To begin the random password generator simply click on the red generate password button. You will first be prompted with selection the length of your password:
 
 ![alt text](./assets/images/length.png "Choose the length of your password")
 
@@ -18,7 +18,7 @@ The password length must be between 8 and 128 characters long. Should the user e
 
 ![alt text](./assets/images/invalid_length.png "User must select a valid length and number")
 
-Once the user selects their desire length, they will be prompted with 4 questions, each quesiton confirming if the user would like to include a lower case letter, upper case letter, symbol, and/or number.
+Once the user selects their desire length, they will be prompted with 4 questions, each question confirming if the user would like to include a lower case letter, upper case letter, symbol, and/or number.
 
 ![alt text](./assets/images/confirm.png "User must choose which character types they would like to include")
 
