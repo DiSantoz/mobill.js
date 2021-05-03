@@ -18,7 +18,7 @@ var generatePassword = function () {
     if (lowerCase) {
       randomPassword.push(randomLetters);
       console.log(randomLetters);
-      total = total.concat(letters)
+      total = total.concat(letters);
     }
 
     //does the user want upper case letters in the password?
@@ -26,7 +26,7 @@ var generatePassword = function () {
     if (upperCase) {
       randomPassword.push(randomUpper);
       console.log(randomUpper);
-      total = total.concat(upperLetters)
+      total = total.concat(upperLetters);
     }
 
     //does the user want symbols in the password?
@@ -34,7 +34,7 @@ var generatePassword = function () {
     if (symbols) {
       randomPassword.push(specialChar);
       console.log(specialChar);
-      total = total.concat(specialChar)
+      total = total.concat(specialChar);
     }
 
     //does the user want numbers in the password?
@@ -42,7 +42,7 @@ var generatePassword = function () {
     if (numeric) {
       randomPassword.push(randomNum);
       console.log(randomNum);
-      total = total.concat(numbers)
+      total = total.concat(numbers);
     }
 
     //verifies that user picked at least one character type or prompts user to start at beginning
