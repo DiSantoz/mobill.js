@@ -22,7 +22,7 @@ Once the user selects their desire length, they will be prompted with 4 question
 
 ![alt text](./assets/images/confirm.png "User must choose which character types they would like to include")
 
-The user must select at least _one_** character type or they will be not be allowed to generate a password.
+The user must select at least **_one_** character type or they will be not be allowed to generate a password.
 
 ![alt text](./assets/images/atleast_one.png "User must select at least one character tpe")
 
